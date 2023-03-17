@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discuss - Profile Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cd8e8264f0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <nav>
+        <div class="nav-left">
+            <a href="index.html"><img src="images/logo.png" class="logo"></a>
+            <ul>
+                <li><img src="images/list.png"></li>
+                <li><img src="images/edit.png"></li>
+                <li><a href="https://outlook.office.com/mail/"><img src="images/inbox.png"></a></li>
+                <li><a href="https://www.youtube.com/"><img src="images/video.png"></a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+
+            <div class="search-box">
+                <img src="images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="images/profile-pic.png" >
+
+            </div>
+
+        </div>
+
+        <!--Settings Menu-----------------------   -->
+        <div class="settings-menu">
+
+            <div id="dark-btn">
+                <span></span>
+            </div>
+
+            <div class="settings-menu-inner">
+
+                <div class="user-profile">
+                    <img src="images/profile-pic.png">
+                    <div>
+                        <p>John Nicholson</p>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve the new design</a>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="settings-links">
+                    <img src="images/setting.png" class="settings-icon">
+                    <a href="#">Settings & Privacy<img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/help.png" class="settings-icon">
+                    <a href="#">Help & Support<img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/display.png" class="settings-icon">
+                    <a href="#">Display & Accessibility<img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/logout.png" class="settings-icon">
+                    <a href="#">Logout<img src="images/arrow.png" width="10px"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- profile page-->
+    <div class="profile-container">
+        <img src="images/cover.jpg" class="cover-img">
+        <div class="profile-details">
+
+            <div class="pd-left">
+                <div class="pd-row">
+                    <img src="images/profile-pic.png" class="pd-image">
+                    <div>
+                        <h3>Jack Nicholson</h3>
+                        <p>120 Followerrs - 2 Posts</p>
+                        <img src="images/member-1.png">
+                        <img src="images/member-2.png">
+                        <img src="images/member-3.png">
+                        <img src="images/member-4.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="pd-right">
+                <button type="button"><img src="images/activity.png"> Analyze Activity</button>
+                <button type="button"><img src="images/message.png">Message</button>
+                <br>
+                <a href=""><img src="images/more.png"></a>
+            </div>
+        </div>
+
+
+        <div class="profile-info">
+            <div class="info-col">
+
+                <div class="profile-intro">
+                    <h3>Intro</h3>
+                    <p class="intro-text">Be Curious, Investigate anything and everything. <img src="images/feeling.png"></p>
+                    <hr>
+                    <ul>
+                        <li><img src="images/profile-job.png"> Works as 3D Services Specialist</li>
+                        <li><img src="images/profile-study.png" alt=""> Studies at University of Oklahoma</li>
+                        <li><img src="images/profile-study.png" alt=""> Went to AME OU Norman</li>
+                        <li><img src="images/profile-home.png" alt=""> Lives in Norman, US</li>
+                        <li><img src="images/profile-location.png" alt=""> From the US</li>
+                    </ul>
+                </div>
+
+                <div class="profile-intro">
+                    <div class="title-box">
+                        <h3>Your Ideas</h3>
+                    <a href="">All Ideas</a>
+                    </div>
+                
+                    <div class="photo-box">
+                        <div><img src="images/feed11.png" alt=""></div>
+                        <div><img src="images/idea1.jpg" alt=""></div>
+                        <div><img src="images/ideas2.jpg" alt=""></div>
+                        <div><img src="images/ideas3.jpg" alt=""></div>
+                        <div><img src="images/ideas4.jpg" alt=""></div>
+                        <div><img src="images/ideas5.png" alt=""></div>
+                    </div>
+                </div>
+
+                <div class="profile-intro">
+                    <div class="title-box">
+                        <h3>Saved Ideas</h3>
+                    <a href="">All Ideas</a>
+                    </div>
+
+                    <p>120 Ideas saved</p>
+                
+                    <div class="friends-box">
+                        <div><img src="images/feed55.jpg" alt=""> <p>Why do we Age?</p></div>
+                        <div><img src="images/depression.jpg" alt=""><p>Endind Depression</p></div>
+                        <div><img src="images/feed11.png" alt=""><p>Earth's Air</p></div>
+                        <div><img src="images/economics.jpg" alt=""><p>Economy</p></div>
+                        <div><img src="images/feed22.jpg" alt=""><p>Hidden Passages</p></div>
+                        <div><img src="images/feed33.png" alt=""><p>Dinosaur</p></div>
+                        <div><img src="images/physics.jpg" alt=""><p>Quantum Physics</p></div>
+                        <div><img src="images/feed44.jpg" alt=""><p>Black Holes</p></div>
+                        <div><img src="images/pyramids.jpg" alt=""><p>Pyramids of Giza</p></div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="post-col">
+                
+                <div class="write-post-container">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>John Nicholson</p>
+                            <small>Public <i class="fas fa-caret-down"></i></small>
+                        </div>
+                    </div>
+                    
+                    <div class="post-input-container">
+                        <textarea rows="3" placeholder="What's on your mind, John?"></textarea>
+                        <div class="add-post-links">
+                            <a href="#"><img src="images/live-video.png"> Live Video</a>
+                            <a href="#"><img src="images/photo.png"> Photo/Video</a>
+                            <a href="#"><img src="images/feeling.png"> Feeling/Activity</a>
+                        </div>
+    
+                    
+                    </div>
+                </div>
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/profile-pic.png">
+                            <div>
+                                <p>John Nicholson</p>
+                                <span>Feb 24 2023, 13:40</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                    
+                    <p class="post-text">
+                    <span>
+                        Why space doesn't suck all the air from earth even though its vacuum?
+                    </span>
+                    </p>
+    
+                     <img src="images/feed1.png" class="post-img">
+                     <p class="post-text"> Air on Earth does not escape to the vacuum of space because
+                         Earth has a <span>gravitational force</span> that keeps the air molecules bound to it. 
+                         Gravity is the force that attracts objects with mass to one another, and
+                          it is what keeps the air molecules from escaping into space.
+                          <br><br>
+    
+                        The Earth's gravitational force is strong enough to hold onto
+                         its atmosphere, which is made up of gases such as <span>nitrogen, 
+                         oxygen, and carbon dioxide</span>. These gases have mass and are 
+                         attracted to the Earth's surface, which means they stay close
+                          to the planet rather than drifting off into space.
+                          <br><br>
+                        
+                        Additionally, the Earth's atmosphere is constantly replenished
+                         by various processes such as <span>volcanic activity, plant respiration,
+                          and the evaporation of water from the oceans.</span> This ensures that 
+                          the atmosphere remains relatively stable and that the air doesn't
+                           escape into the vacuum of space.
+                           <br><br>
+                        
+                        Finally, it is important to note that some molecules in the Earth's
+                         atmosphere can, in fact, escape into space, but this is a slow and
+                          continuous process. This loss of atmosphere is balanced by the 
+                          constant replenishment mentioned above, which keeps the overall
+                           atmospheric pressure and composition relatively stable over time.
+                           <br><br>
+                        
+                        <a href="https://www.spacecentre.nz/resources/faq/solar-system/earth/atmosphere-escape.html">#Atmospheric pressure</a>
+                         <a href="https://www.spacecentre.nz/resources/faq/solar-system/earth/atmosphere-escape.html"> #Vacuum</a>  </p>
+                     <hr>
+    
+                     <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like-red.png"> 120</div>
+                            <div><img src="images/comments.png"> 45</div>
+                            <div><img src="images/share.png"> 20</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/profile-pic.png"><i class="fas fa-caret-down"></i>
+                        </div>
+    
+                     </div>
+                </div>
+    
+    
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/profile-pic.png">
+                            <div>
+                                <p>John Nicholson</p>
+                                <span>June 06 2022, 22:56</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                    
+                    <p class="post-text"><span>Moez Ullah Khan, a student at the University
+                        of Oklahoma creates a website for students.
+                    </span></p>
+                     <img src="images/feed5.png" class="post-img">
+                     <p class="post-text">
+                        <span>Moez Ullah Khan</span> is a student at the University of Oklahoma. He is majoring
+                        in Mechanical Engineering with a minor in Computer Science. He recently
+                        created a website called "Discuss It" using HTML, CSS, and Java Script.
+                        <br><br>
+                        The purpose of this website is to provide a platform where people
+                        can share their original ideas, theories about something. It could be
+                        a description of an invention, new theory or theorem they came up with, 
+                        or an explanation of a mystery. The possibilities are infinite.
+    
+                        if you want to learn more about his work, then follow him on his <a href="https://www.linkedin.com/in/moezullahkhan/">Linkedln.</a>
+                     </p>
+                        <hr>
+                     <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like.png"> 120</div>
+                            <div><img src="images/comments.png"> 45</div>
+                            <div><img src="images/share.png"> 20</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/profile-pic.png"><i class="fas fa-caret-down"></i>
+                        </div>
+    
+                     </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    
+
+    <div class="footer">
+        <p>Copy Right 2023 - Discuss </p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

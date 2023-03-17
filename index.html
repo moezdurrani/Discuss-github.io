@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discuss - Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cd8e8264f0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <nav>
+        <div class="nav-left">
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><img src="images/list.png"></li>
+                <li><img src="images/edit.png"></li>
+                <li><a href="https://outlook.office.com/mail/"><img src="images/inbox.png"></a></li>
+                <li><a href="https://www.youtube.com/"><img src="images/video.png"></a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+
+            <div class="search-box">
+                <img src="images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="images/profile-pic.png" >
+
+            </div>
+
+        </div>
+
+        <!--Settings Menu-----------------------   -->
+        <div class="settings-menu">
+
+            <div id="dark-btn">
+                <span></span>
+            </div>
+
+            <div class="settings-menu-inner">
+
+                <div class="user-profile">
+                    <a href="profile.html"><img src="images/profile-pic.png"></a>
+                    <div>
+                        <p class="settings-name">John Nicholson</p>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png">
+                    <div>
+                        <h3>Give Feedback</h3>
+                        <a href="#">Help us to improve the new design</a>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="settings-links">
+                    <img src="images/setting.png" class="settings-icon">
+                    <a href="#">Settings & Privacy<img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/help.png" class="settings-icon">
+                    <a href="#">Help & Support<img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/display.png" class="settings-icon">
+                    <a href="#">Display & Accessibility<img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/logout.png" class="settings-icon">
+                    <a href="#">Logout<img src="images/arrow.png" width="10px"></a>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+    </nav>
+
+
+    <div class="container">
+        
+        <!--left-sidebar-----------------------   -->
+        <div class="left-sidebar">
+
+            <div class="imp-links">
+                <a href="#"><img src="images/create.png">Create Space</a>
+                <a href="#"><img src="images/physics.jpg"> Physics</a>
+                <a href="#"><img src="images/economics.jpg">Economy</a>
+                <a href="#"><img src="images/history.jpg">History</a>
+                <a href="#"><img src="images/astronomy.jpg">Astronomy</a>
+                <a href="#">See More</a>
+            </div>
+
+            <div class="shortcut-links">
+                <p>Saved Ideas</p>
+                <a href="#"><img src="images/dimension.webp">Visualizing 5th Dimension</a>
+                <a href="#"><img src="images/pyramids.jpg">How were Pyraminds built?</a>
+                <a href="#"><img src="images/filter.png">Making a portable water filter</a>
+                <a href="#"><img src="images/depression.jpg">How to end Economic Depression</a>
+            </div>
+
+        </div>
+
+
+         <!--main-content-----------------------   -->
+        <div class="main-content">
+
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="images/upload.png">
+                    <p>Short Ideas</p>
+                </div>
+                <div class="story story2">
+                    <img src="images/member-1.png">
+                    <p>Sorting in Python</p>
+                </div>
+                <div class="story story3">
+                    <img src="images/member-2.png">
+                    <p>Stresses in a beam</p>
+                </div>
+                <div class="story story4">
+                    <img src="images/member-3.png">
+                    <p>Are Blackholes real?</p>
+                </div>
+                <div class="story story5">
+                    <img src="images/member-4.png">
+                    <p>Why do we age?</p>
+                </div>
+            </div>
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png">
+                    <div>
+                        <p>John Nicholson</p>
+                        <small>Public <i class="fas fa-caret-down"></i></small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="What knowledge do you want to share today, John?"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="images/live-video.png"> Go Live</a>
+                        <a href="#"><img src="images/photo.png"> Photo/Video</a>
+                        <a href="#"><img src="images/code.png"> Code</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>John Nicholson</p>
+                            <span>Feb 24 2023, 13:40</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text">
+                <span>
+                    Why space doesn't suck all the air from earth even though its vacuum?
+                </span>
+                </p>
+
+                 <img src="images/feed1.png" class="post-img">
+                 <p class="post-text"> Air on Earth does not escape to the vacuum of space because
+                     Earth has a <span>gravitational force</span> that keeps the air molecules bound to it. 
+                     Gravity is the force that attracts objects with mass to one another, and
+                      it is what keeps the air molecules from escaping into space.
+                      <br><br>
+
+                    The Earth's gravitational force is strong enough to hold onto
+                     its atmosphere, which is made up of gases such as <span>nitrogen, 
+                     oxygen, and carbon dioxide</span>. These gases have mass and are 
+                     attracted to the Earth's surface, which means they stay close
+                      to the planet rather than drifting off into space.
+                      <br><br>
+                    
+                    Additionally, the Earth's atmosphere is constantly replenished
+                     by various processes such as <span>volcanic activity, plant respiration,
+                      and the evaporation of water from the oceans.</span> This ensures that 
+                      the atmosphere remains relatively stable and that the air doesn't
+                       escape into the vacuum of space.
+                       <br><br>
+                    
+                    Finally, it is important to note that some molecules in the Earth's
+                     atmosphere can, in fact, escape into space, but this is a slow and
+                      continuous process. This loss of atmosphere is balanced by the 
+                      constant replenishment mentioned above, which keeps the overall
+                       atmospheric pressure and composition relatively stable over time.
+                       <br><br>
+                    
+                    <a href="https://www.spacecentre.nz/resources/faq/solar-system/earth/atmosphere-escape.html">#Atmospheric pressure</a>
+                     <a href="https://www.spacecentre.nz/resources/faq/solar-system/earth/atmosphere-escape.html"> #Vacuum</a>  </p>
+                 <hr>
+
+                 <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-red.png"> 120</div>
+                        <div><img src="images/comments.png"> 45</div>
+                        <div><img src="images/share.png"> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png"><i class="fas fa-caret-down"></i>
+                    </div>
+
+                 </div>
+            </div>
+
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/member-1.png">
+                        <div>
+                            <p>Alison Mina</p>
+                            <span>Jan 01 2023, 11:46</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text"><span>The truth behing the hidden chamber's revealed Inside the Great Pyramind of Giza</span></p>
+                 <img src="images/feed2.jpg" class="post-img">
+                <p class="post-text">
+                    Even at 4,500 years old, the <span>Great Pyramid of Giza</span> is still revealing new secrets.
+                    On Thursday, Egyptian officials announced the discovery of a hidden corridor above
+                     the pyramid's entrance. Measuring 30 feet long, the passage could serve as a 
+                     jumping-off point for additional research into the mysterious inner chambers.
+                     <br><br>
+                    
+                    According to a new study published in the journal Nature Communications, the pyramid
+                     has been undergoing noninvasive scans since 2015. Through an international partnership
+                      known as <span>ScanPyramids</span>, researchers from around the world have been using cosmic-ray 
+                      imaging and infrared thermography to map out what lies behind the sand-beaten stones
+                       of the exterior.
+                       <br><br>
+                    
+                    These scans have revealed several voids, including the <span>30-foot passage</span>, which lies just 
+                    behind a chevron-shaped configuration of stones not far from where today's tourists enter
+                     the pyramid. A video released by ScanPyramids offers a glimpse into the mapping process 
+                     and shows where this newly discovered corridor lies.
+                     <br><br>
+                     <a href="https://www.smithsonianmag.com/smart-news/hidden-chamber-pyramid-giza-180981745/">#Hidden Chambers</a>
+                </p>
+                    <hr>
+                 <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like.png"> 120</div>
+                        <div><img src="images/comments.png"> 45</div>
+                        <div><img src="images/share.png"> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png"><i class="fas fa-caret-down"></i>
+                    </div>
+
+                 </div>
+            </div>
+
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/member-3.png">
+                        <div>
+                            <p>Samona Rose</p>
+                            <span>Dec 14 2022, 15:05</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text"> <span>Dinosaur with the longest neck ever to exist on Earth found.</span></p>
+                 <img src="images/feed3.png" class="post-img">
+                 <p class="post-text">
+                    Think giraffes have long necks? Paleontologists say a dinosaur that
+                     roamed northwest China some 162 million years ago had a neck eight
+                      times as long, making it the <span>"longest-known neck in the animal
+                       kingdom,"</span> per IFL Science. 
+                       <br><br>
+                       Partial remains of the dinosaur,
+                       <span>Mamenchisaurus sinocanadorum,</span> were discovered in the Xinjiang
+                         Uyghur Autonomous Region in 1987. More than three decades 
+                         later, researchers assessed the dinosaur's size and scale 
+                         in comparing the handful of fossilized bones, including 
+                         three vertebrae, with bones from complete skeletons of 
+                         related dinosaurs, per CNN. According to their study published
+                          Wednesday in the Journal of Systematic Palaeontology, this 
+                          sauropod had a 50-foot-long neck, about 10 feet longer than 
+                          a typical bus.
+                          <br><br>
+                          <a href="https://www.newser.com/story/332791/dino-claims-longest-neck-known-to-man.html">#Longest Neck Dinosaur</a>
+                 </p>
+                    <hr>
+                 <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like.png"> 120</div>
+                        <div><img src="images/comments.png"> 45</div>
+                        <div><img src="images/share.png"> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png"><i class="fas fa-caret-down"></i>
+                    </div>
+
+                 </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/member-2.png">
+                        <div>
+                            <p>Jackson Aston</p>
+                            <span>Sep 30 2022, 09:37</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text"><span>Miditerranean diet can cut heart disease risk in women
+                    by 24 percent.</span></p>
+                 <img src="images/feed4.png" class="post-img">
+                 <p class="post-text">
+                    A Mediterranean diet could lower the risk of <span>heart disease</span> in women
+                     by 24 percent, new research says.
+                     <br><br>
+                     
+                     It's the first such analysis of the possible link between a 
+                     Mediterranean-type diet and cardiovascular disease that focuses
+                      on women, the authors say.
+                      <br><br>
+                      
+                      Heart disease is the leading cause of death globally, according 
+                      to the <span>World Health Organization,</span> and in the United States, it 
+                      is the No. 1 killer of women, the Centers for Disease Control and
+                       Prevention says.
+                       <br><br>
+
+                       <a href="https://www.washingtonpost.com/wellness/2023/03/15/mediterranean-diet
+                       -heart-disease-women-study/">Link to the original source here.</a>
+                 </p>
+                    <hr>
+                 <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like.png"> 120</div>
+                        <div><img src="images/comments.png"> 45</div>
+                        <div><img src="images/share.png"> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png"><i class="fas fa-caret-down"></i>
+                    </div>
+
+                 </div>
+            </div>
+
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>John Nicholson</p>
+                            <span>June 06 2022, 22:56</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text"><span>Moez Ullah Khan, a student at the University
+                    of Oklahoma creates a website for students.
+                </span></p>
+                 <img src="images/feed5.png" class="post-img">
+                 <p class="post-text">
+                    <span>Moez Ullah Khan</span> is a student at the University of Oklahoma. He is majoring
+                    in Mechanical Engineering with a minor in Computer Science. He recently
+                    created a website called "Discuss It" using HTML, CSS, and Java Script.
+                    <br><br>
+                    The purpose of this website is to provide a platform where people
+                    can share their original ideas, theories about something. It could be
+                    a description of an invention, new theory or theorem they came up with, 
+                    or an explanation of a mystery. The possibilities are infinite.
+
+                    if you want to learn more about his work, then follow him on his <a href="https://www.linkedin.com/in/moezullahkhan/">Linkedln.</a>
+                 </p>
+                    <hr>
+                 <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like.png"> 120</div>
+                        <div><img src="images/comments.png"> 45</div>
+                        <div><img src="images/share.png"> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png"><i class="fas fa-caret-down"></i>
+                    </div>
+
+                 </div>
+            </div>
+
+            <button type="button" class="load-more-btn">Load More</button>
+
+
+
+        </div>
+
+
+         <!--right-sidebar-----------------------   -->
+        <div class="right-sidebar">
+
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h4>Live Programming android app</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> Zoom link provided</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>22</h3>
+                    <span>June</span>
+                </div>
+                <div class="right-event">
+                    <h4>How did humans evolve</h4>
+                    <p> <i class="fa-solid fa-location-dot"></i> Live on Youtube</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="#">Closed</a>
+            </div>
+            <img src="images/advertisement.png" class="sidebar-ads">
+
+            <div class="sidebar-title">
+                <h4>Conversation</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-1.png">
+                </div>
+                <p>Alison Mina</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-2.png">
+                </div>
+                <p>Jackson Aston</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-3.png">
+                </div>
+                <p>Samona Rose
+            </div>
+
+        </div>  
+    </div>
+
+    <div class="footer">
+        <p>Copy Right 2023 - Discuss </p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
