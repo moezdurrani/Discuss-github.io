@@ -653,6 +653,7 @@ nav{
 }
 .friends-box p{
     position: absolute;
+    margin-top: -25px;
     bottom: 0;
     left: 0;
 }
