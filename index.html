@@ -115,23 +115,23 @@
         <div class="main-content">
 
             <div class="story-gallery">
-                <div class="story story1">
+                <div onmouseenter="scale1()" onmouseleave="shrink1()" id="storyy1" class="story story1">
                     <img src="images/upload.png">
                     <p>Short Ideas</p>
                 </div>
-                <div class="story story2">
+                <div onmouseenter="scale2()" onmouseleave="shrink2()" id="storyy2" class="story story2">
                     <img src="images/member-1.png">
                     <p>Sorting in Python</p>
                 </div>
-                <div class="story story3">
+                <div onmouseenter="scale3()" onmouseleave="shrink3()" id="storyy3" class="story story3">
                     <img src="images/member-2.png">
                     <p>Stresses in a beam</p>
                 </div>
-                <div class="story story4">
+                <div onmouseenter="scale4()" onmouseleave="shrink4()" id="storyy4" class="story story4">
                     <img src="images/member-3.png">
                     <p>Are Blackholes real?</p>
                 </div>
-                <div class="story story5">
+                <div onmouseenter="scale5()" onmouseleave="shrink5()" id="storyy5" class="story story5">
                     <img src="images/member-4.png">
                     <p>Why do we age?</p>
                 </div>
@@ -209,7 +209,7 @@
 
                  <div class="post-row">
                     <div class="activity-icons">
-                        <div><img src="images/like-red.png"> 120</div>
+                        <div><img id="like_unlike1" src="images/like-red.png" onclick="changeIcon()"> 120</div>
                         <div><img src="images/comments.png"> 45</div>
                         <div><img src="images/share.png"> 20</div>
                     </div>
@@ -259,7 +259,7 @@
                     <hr>
                  <div class="post-row">
                     <div class="activity-icons">
-                        <div><img src="images/like.png"> 120</div>
+                        <div><img id="like_unlike2" onclick="changeIcon2()" src="images/like.png"> 120</div>
                         <div><img src="images/comments.png"> 45</div>
                         <div><img src="images/share.png"> 20</div>
                     </div>
@@ -307,7 +307,7 @@
                     <hr>
                  <div class="post-row">
                     <div class="activity-icons">
-                        <div><img src="images/like.png"> 120</div>
+                        <div><img id="like_unlike3" onclick="changeIcon3()" src="images/like.png"> 120</div>
                         <div><img src="images/comments.png"> 45</div>
                         <div><img src="images/share.png"> 20</div>
                     </div>
@@ -355,7 +355,7 @@
                     <hr>
                  <div class="post-row">
                     <div class="activity-icons">
-                        <div><img src="images/like.png"> 120</div>
+                        <div><img id="like_unlike4" onclick="changeIcon4()" src="images/like.png"> 120</div>
                         <div><img src="images/comments.png"> 45</div>
                         <div><img src="images/share.png"> 20</div>
                     </div>
@@ -398,7 +398,7 @@
                     <hr>
                  <div class="post-row">
                     <div class="activity-icons">
-                        <div><img src="images/like.png"> 120</div>
+                        <div><img id="like_unlike5" onclick="changeIcon5()" src="images/like.png"> 120</div>
                         <div><img src="images/comments.png"> 45</div>
                         <div><img src="images/share.png"> 20</div>
                     </div>

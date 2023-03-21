@@ -252,18 +252,30 @@ nav{
     font-size: 14px;
 }
 .story1{
+    transition: 0.3s ease;
     background-image: linear-gradient(transparent, rgba(0,0,0,0.5)), url(images/status-1.jpg);
 }
+/*
+.story1:hover{ 
+    margin-top: 55px;
+    margin-left: -90px;
+    transform: scale(1.6); 
+}
+*/
 .story2{
+    transition: 0.3s ease;
     background-image: linear-gradient(transparent, rgba(0,0,0,0.5)), url(images/status-2.jpg);
 }
 .story3{
+    transition: 0.3s ease;
     background-image: linear-gradient(transparent, rgba(0,0,0,0.5)), url(images/status-3.png);
 }
 .story4{
+    transition: 0.3s ease;
     background-image: linear-gradient(transparent, rgba(0,0,0,0.5)), url(images/status-4.jpg);
 }
 .story5{
+    transition: 0.3s ease;
     background-image: linear-gradient(transparent, rgba(0,0,0,0.5)), url(images/status-5.jpg);
 }
 .story.story1 img{
@@ -373,6 +385,7 @@ nav{
 .activity-icons div img{
     width: 18px;
     margin-right: 10px;
+    cursor: pointer;
 }
 .activity-icons div{
     display: inline-flex;
