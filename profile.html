@@ -17,14 +17,14 @@
                 <li><img src="images/list.png"></li>
                 <li><img src="images/edit.png"></li>
                 <li><a href="https://outlook.office.com/mail/"><img src="images/inbox.png"></a></li>
-                <li><a href="https://www.youtube.com/"><img src="images/video.png"></a></li>
+                <li><img onclick="videoOpen()" src="images/video.png"></a></li>
             </ul>
         </div>
         <div class="nav-right">
 
             <div class="search-box">
-                <img src="images/search.png">
-                <input type="text" placeholder="Search">
+                <img onclick = "searchBing()" src="images/search.png">
+                <input type="text" id="userSearch" placeholder="Search">
             </div>
             <div class="nav-user-icon online" onclick="settingsMenuToggle()">
                 <img src="images/profile-pic.png" >
@@ -77,6 +77,51 @@
                 </div>
             </div>
         </div>
+
+        <div class="videoholder" id="videoholder">
+            <div class="video1">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3pZNzF6LBII" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <hr>
+            <div class="video2">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/N88g_IGGHRg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <hr>
+            <div class="video3">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/q34tLTpg3N4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <hr>
+            <div class="video4">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/QelK8rDrbpM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <hr>
+            <div class="video5">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/TRL7o2kPqw0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <hr>
+            <div class="video6">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BhtgINeaJWg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <hr>
+            <div class="video7">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/rltpH6ck2Kc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <hr>
+            <div class="video8">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/OPoMww9x378" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video9">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9If-K9R3Ka4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video10">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-UrdExQW0cs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div> 
+
+        <div class="websiteView" id="websiteView">
+            <iframe class="web" id = "web" src="https://www.google.com/search?igu=1&q=" frameborder="0" width="100%" height="100%" ></iframe>
+         </div>
+
     </nav>
 
     <!-- profile page-->
@@ -237,7 +282,7 @@
     
                      <div class="post-row">
                         <div class="activity-icons">
-                            <div><img id="like_unlike6" onclick="changeIcon6()" src="images/like-red.png"> 120</div>
+                            <div><img id="like_unlike6" onclick="changeIcon('like_unlike6'); Incr('numlik6')" src="images/like.png"> <p id="numlik6"></p></div>
                             <div><img src="images/comments.png"> 45</div>
                             <div><img src="images/share.png"> 20</div>
                         </div>
@@ -280,7 +325,7 @@
                         <hr>
                      <div class="post-row">
                         <div class="activity-icons">
-                            <div><img id="like_unlike7" onclick="changeIcon7()" src="images/like.png"> 120</div>
+                            <div><img id="like_unlike7" onclick="changeIcon('like_unlike7'); Incr('numlik7')" src="images/like.png"> <p id="numlik7"></p></div>
                             <div><img src="images/comments.png"> 45</div>
                             <div><img src="images/share.png"> 20</div>
                         </div>

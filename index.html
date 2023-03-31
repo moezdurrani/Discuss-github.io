@@ -9,22 +9,22 @@
     <script src="https://kit.fontawesome.com/cd8e8264f0.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
-    <nav>
+
+        <nav>
         <div class="nav-left">
             <img src="images/logo.png" class="logo">
             <ul>
                 <li><img src="images/list.png"></li>
                 <li><img src="images/edit.png"></li>
                 <li><a href="https://outlook.office.com/mail/"><img src="images/inbox.png"></a></li>
-                <li><a href="https://www.youtube.com/"><img src="images/video.png"></a></li>
+                <li><img onclick="videoOpen()" src="images/video.png"></a></li>
             </ul>
         </div>
         <div class="nav-right">
 
             <div class="search-box">
-                <img src="images/search.png">
-                <input type="text" placeholder="Search">
+                <img onclick = "searchBing()" src="images/search.png">
+                <input type="text" id="userSearch" placeholder="Search">
             </div>
             <div class="nav-user-icon online" onclick="settingsMenuToggle()">
                 <img src="images/profile-pic.png" >
@@ -34,6 +34,11 @@
         </div>
 
         <!--Settings Menu-----------------------   -->
+                   
+        </div>
+
+        
+        
         <div class="settings-menu">
 
             <div id="dark-btn">
@@ -82,6 +87,55 @@
 
         </div>
 
+        
+
+    
+            <div class="videoholder" id="videoholder">
+                <div class="video1">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3pZNzF6LBII" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <hr>
+                <div class="video2">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/N88g_IGGHRg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <hr>
+                <div class="video3">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/q34tLTpg3N4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <hr>
+                <div class="video4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/QelK8rDrbpM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <hr>
+                <div class="video5">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/TRL7o2kPqw0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <hr>
+                <div class="video6">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BhtgINeaJWg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <hr>
+                <div class="video7">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rltpH6ck2Kc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <hr>
+                <div class="video8">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/OPoMww9x378" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="video9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9If-K9R3Ka4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="video10">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-UrdExQW0cs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div> 
+
+    
+            <div class="websiteView" id="websiteView">
+                    <iframe class="web" id = "web" src="https://www.google.com/search?igu=1&q=" frameborder="0" width="100%" height="100%" ></iframe>
+            </div>
+            
+        
 
     </nav>
 
@@ -89,7 +143,11 @@
     <div class="container">
         
         <!--left-sidebar-----------------------   -->
+        
+
         <div class="left-sidebar">
+
+            
 
             <div class="imp-links">
                 <a href="#"><img src="images/create.png">Create Space</a>
@@ -107,6 +165,9 @@
                 <a href="#"><img src="images/filter.png">Making a portable water filter</a>
                 <a href="#"><img src="images/depression.jpg">How to end Economic Depression</a>
             </div>
+
+            
+        
 
         </div>
 
@@ -156,6 +217,8 @@
 
                 </div>
             </div>
+
+           
 
             <div class="post-container">
                 <div class="post-row">
@@ -209,9 +272,9 @@
 
                  <div class="post-row">
                     <div class="activity-icons">
-                        <div><img id="like_unlike1" src="images/like-red.png" onclick="changeIcon()"> 120</div>
-                        <div><img src="images/comments.png"> 45</div>
-                        <div><img src="images/share.png"> 20</div>
+                        <div><img id="like_unlike1" onclick="changeIcon('like_unlike1'); Incr('numlik1')" src="images/like.png"> <p id="numlik1"> </p></div>
+                        <div><img src="images/comments.png"> 32</div>
+                        <div><img src="images/share.png"> 66 </div>
                     </div>
                     <div class="post-profile-icon">
                         <img src="images/profile-pic.png"><i class="fas fa-caret-down"></i>
@@ -259,7 +322,7 @@
                     <hr>
                  <div class="post-row">
                     <div class="activity-icons">
-                        <div><img id="like_unlike2" onclick="changeIcon2()" src="images/like.png"> 120</div>
+                        <div><img id="like_unlike2" onclick="changeIcon('like_unlike2'); Incr('numlik2')" src="images/like.png"> <p id="numlik2"> </p> </div>
                         <div><img src="images/comments.png"> 45</div>
                         <div><img src="images/share.png"> 20</div>
                     </div>
@@ -307,7 +370,7 @@
                     <hr>
                  <div class="post-row">
                     <div class="activity-icons">
-                        <div><img id="like_unlike3" onclick="changeIcon3()" src="images/like.png"> 120</div>
+                        <div><img id="like_unlike3" onclick="changeIcon('like_unlike3'); Incr('numlik3')" src="images/like.png"> <p id="numlik3"> </p> </div>
                         <div><img src="images/comments.png"> 45</div>
                         <div><img src="images/share.png"> 20</div>
                     </div>
@@ -319,6 +382,7 @@
             </div>
 
             <div class="post-container">
+                
                 <div class="post-row">
                     <div class="user-profile">
                         <img src="images/member-2.png">
@@ -355,7 +419,7 @@
                     <hr>
                  <div class="post-row">
                     <div class="activity-icons">
-                        <div><img id="like_unlike4" onclick="changeIcon4()" src="images/like.png"> 120</div>
+                        <div><img id="like_unlike4" onclick="changeIcon('like_unlike4'); Incr('numlik4')" src="images/like.png"> <p id="numlik4"> </p> </div>
                         <div><img src="images/comments.png"> 45</div>
                         <div><img src="images/share.png"> 20</div>
                     </div>
@@ -365,6 +429,8 @@
 
                  </div>
             </div>
+
+            
 
 
             <div class="post-container">
@@ -398,7 +464,7 @@
                     <hr>
                  <div class="post-row">
                     <div class="activity-icons">
-                        <div><img id="like_unlike5" onclick="changeIcon5()" src="images/like.png"> 120</div>
+                        <div><img id="like_unlike5" onclick="changeIcon('like_unlike5'); Incr('numlik5')" src="images/like.png"> <p id="numlik5"> </p> </div>
                         <div><img src="images/comments.png"> 45</div>
                         <div><img src="images/share.png"> 20</div>
                     </div>
@@ -414,7 +480,6 @@
 
 
         </div>
-
 
          <!--right-sidebar-----------------------   -->
         <div class="right-sidebar">
@@ -486,6 +551,8 @@
     </div>
 
     <script src="script.js"></script>
+
+    
 
 </body>
 </html>
